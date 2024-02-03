@@ -16,5 +16,5 @@ BACK - END
 CREATE `.env` File
 
 ```
-MONGODB_URL = MONGODB_URL=mongodb+srv://(YOUR_NAME):(YOUR_PASSWORD)0@cluster0.noqkwj6.mongodb.net/crud
+MONGODB_URL=mongodb+srv://(YOUR_NAME):(YOUR_PASSWORD)0@cluster0.noqkwj6.mongodb.net/crud
 ```
