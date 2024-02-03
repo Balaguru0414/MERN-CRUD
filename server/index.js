@@ -12,7 +12,7 @@ app.use(express.json());
 
 // mongoose.connect("mongodb://127.0.0.1:27017/crud");
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect(process.env.MONGODB_URL, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
   .then(() => {
     console.log("DB is Successfully Connected");
     app.listen(2000, () => {
