@@ -1,6 +1,6 @@
 # MERN - CRUD
 
--(LIVE DEMO)[https://mern-crud-bg.netlify.app]
+-[LIVE DEMO](https://mern-crud-bg.netlify.app)
 
 FRONT - END
 CREATE `.env` File
