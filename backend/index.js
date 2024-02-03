@@ -2,13 +2,16 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const UserModel = require("./models/users");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/crud");
+// mongoose.connect("mongodb://127.0.0.1:27017/crud");
+mongoose.connect(process.env.MONGODB_URL);
 
 // Create ============================
 app.post("/createuser", (req, res) => {
